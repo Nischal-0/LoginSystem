@@ -124,15 +124,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["email"])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'nischaldhamala0@gmail.com'; 
-            $mail->Password = 'wcnk kcso mnmj rbve'; 
+            $mail->Username = 'To_recieve_mail_id'; 
+            $mail->Password = 'Passcode_not_Password'; 
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
             // Set additional headers for the email
-            $headers = "nischaldhamala0@gmail.com\r\n";
-            $headers .= "nischaldhamala@ismt.edu.np\r\n"; 
-            $headers .= "nischaldhamala0@gmail.com\r\n";
+            $headers = "To_recieve_mail_id\r\n";
+            $headers .= "To_reply_mail_id\r\n"; 
+            $headers .= "To_recieve_mail_id\r\n";
             $headers .= "X-Mailer: PHP/" . phpversion();
 
             // Send an email with the reset link containing the token
@@ -149,8 +149,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["email"])) {
             Don't forget your password again. 🧠";
 
             // Use the updated headers in the mail function
-            $mail->setFrom('nischaldhamala0@gmail.com');
-            $mail->addReplyTo('nischaldhamala@ismt.edu.np'); 
+            $mail->setFrom('To_recieve_mail_id');
+            $mail->addReplyTo('To_send_reply_mail_id'); 
             $mail->addAddress($email);
             $mail->Subject = $subject;
             $mail->Body = $message;

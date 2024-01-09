@@ -7,7 +7,7 @@ $recaptchaError = ''; // Initialize reCAPTCHA error message
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $recaptchaSecretKey = "6LcGTUQpAAAAAPNr4CXX_RDm8MF4DWOZ2GyjpB6g";  
+    $recaptchaSecretKey = "Secrect_key";  
     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
     $recaptchaUrl = "https://www.google.com/recaptcha/api/siteverify";
@@ -137,7 +137,7 @@ $conn->close();
                 <input type="text" name="username" placeholder="Username" required autofocus>
                 <input type="password" name="password" placeholder="Password" required autofocus>
 
-                <div class="g-recaptcha" data-sitekey="6LcGTUQpAAAAABTfOzPl28hznrAlgVqjoiqzu2rS"></div>
+                <div class="g-recaptcha" data-sitekey="Site_key"></div>
 
                 <button class="btn" type="submit">Login</button>
             </form>
