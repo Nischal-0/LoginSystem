@@ -1,0 +1,59 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('ok.JFIF');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup-container {
+    background-color: #54b09b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(184, 54, 54, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+/* Add your CSS styles for password strength here */
+
+/* Styled Signup Button */
+button {
+    background-color: #4CAF50;
+    color: #250645;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #161199;
+}

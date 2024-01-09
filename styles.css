@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4e34b6, #1ac6f5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2 {
+    color: #000000;
+    text-decoration-style: double;
+    text-underline-offset: 10px;
+}
+
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 20px rgba(4, 4, 4, 0.5);
+    width: 60%;
+    max-width: 500px; 
+    margin: auto; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #1ac6f5; /* Highlight input on focus */
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+#username,
+#email,
+#password,
+#confirm-password {
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#password-strength {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#password-match-error {
+    margin-top: 10px;
+    color: red;
+}
+
+button {
+    background-color: #1ac6f5;
+    color: #fff;
+    font-family: 'Cambria', 'Coquin', 'Georgia', 'Times', 'Times New Roman', serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #08eb6e;
+}
+
+
+#back-arrow {
+    background-color: #4CAF50;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#back-arrow:hover {
+    background-color: #45a049;
+}
+
+#password-strength {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#password-validation-error {
+    margin-top: 10px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .form-group label,
+    .form-group input {
+        width: 100%;
+        margin-right: 0;
+        }
+    }
+    
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+    
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
